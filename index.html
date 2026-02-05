@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Landing Page | Built For Flight</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="#">
+          <span class="brand__mark"></span>
+          <span class="brand__name">AEROSTEP</span>
+        </a>
+
+        <nav class="nav">
+          <a href="#women">Women</a>
+          <a href="#men">Men</a>
+          <a href="#drops">Drops</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero--top">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <h1>Built<br />For Flight</h1>
+            <p class="lead">Introducing <strong>Aerostep Flyknit</strong>.<br />Our lightest shoe, ever.</p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#shop">SHOP</a>
+              <a class="btn btn--ghost" href="#drops">New drops</a>
+            </div>
+
+            <div class="hero__meta">
+              <div class="meta">
+                <span class="meta__k">Weight</span>
+                <span class="meta__v">214g</span>
+              </div>
+              <div class="meta">
+                <span class="meta__k">Cushion</span>
+                <span class="meta__v">Dynamic</span>
+              </div>
+              <div class="meta">
+                <span class="meta__k">Fit</span>
+                <span class="meta__v">Adaptive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <img src="img/shoe.png" alt="Chaussure Aerostep Flyknit" />
+          </div>
+        </div>
+      </section>
+
+      <section class="category" id="shop">
+        <div class="container">
+          <div class="category__grid">
+            <a class="pill-card" id="women" href="#">
+              <div class="pill-card__text">
+                <h3>Women</h3>
+                <p>Shop Now</p>
+              </div>
+              <span class="pill-card__dot" aria-hidden="true"></span>
+            </a>
+
+            <a class="pill-card" id="men" href="#">
+              <div class="pill-card__text">
+                <h3>Men</h3>
+                <p>Shop Now</p>
+              </div>
+              <span class="pill-card__dot" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="drops" id="drops">
+        <div class="container">
+          <div class="drops__grid">
+            <article class="drop-card">
+              <div class="drop-card__media">
+                <img src="img/detail-1.jpg" alt="" />
+              </div>
+              <h3>Never Miss<br />a drop</h3>
+              <p>Receive updates about new products and promotions.</p>
+              <a class="link" href="#">Join the list</a>
+            </article>
+
+            <article class="drop-card">
+              <div class="drop-card__media">
+                <img src="img/detail-2.jpg" alt="" />
+              </div>
+              <h3>Never Miss<br />a drop</h3>
+              <p>Receive updates about new products and promotions.</p>
+              <a class="link" href="#">See what’s new</a>
+            </article>
+
+            <article class="drop-card">
+              <div class="drop-card__media">
+                <img src="img/lifestyle.jpg" alt="Chaussure portée" />
+              </div>
+              <h3>Never Miss<br />a drop</h3>
+              <p>Receive updates about new products and promotions.</p>
+              <a class="link" href="#">Get early access</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero hero--bottom">
+        <div class="container hero__grid hero__grid--reverse">
+          <div class="hero__visual">
+            <img src="img/shoe.png" alt="Chaussure Aerostep Flyknit" />
+          </div>
+
+          <div class="hero__copy">
+            <h2>Built<br />For Flight</h2>
+            <p class="lead">Introducing <strong>Aerostep Flyknit</strong>.<br />A responsive ride for daily runs.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#newsletter">SHOP</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter" id="newsletter">
+        <div class="container newsletter__inner">
+          <div class="newsletter__copy">
+            <h2>Never Miss<br />a drop</h2>
+            <p>Receive updates about new products and promotions.</p>
+          </div>
+
+          <form class="newsletter__form" action="#" method="post">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@email.com" required />
+            <button class="btn btn--accent" type="submit">JOIN MAILING LIST</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <p>© <span id="year"></span> Aerostep. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
